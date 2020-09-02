@@ -2,6 +2,9 @@ const express = require('express'),
      http = require('http');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const dishRouter = require('./routes/dishRouter');
+
+app.use('/dishes', dishRouter);
 
 const hostname = 'localhost';
 const port = 3000;
